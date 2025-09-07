@@ -1,0 +1,22 @@
+<View>
+  <!-- 多模态输入视图 -->
+  <View style="display: flex; flex-direction: column; gap: 20px; padding: 20px">
+    
+    <!-- 图像展示区域 -->
+    <Image name="image_display" value="$image" zoom="true" width="100%"/>
+    
+    <!-- 问题展示区域 -->
+    <View style="background: #f5f7fa; padding: 15px; border-radius: 8px">
+      <Header value="问题描述"/>
+      <Text name="question_text" value="$question" style="font-size: 16px; color: #2c3e50"/>
+    </View>
+
+<!-- 大模型响应区域 -->
+    <View style="background: #e8f4ff; padding: 15px; border-radius: 8px">
+      <Header value="模型分析"/>
+      <TextArea name="model_description" toName="image_display" value="${predictions[0].result[0].value.text}" model= "image_model" style="font-size: 14px; color: #34495e; white-space: pre-wrap"/>
+    </View>
+    
+  </View>
+
+</View>
