@@ -1,4 +1,4 @@
-# 🔍 Label Studio 多模态标注工具（Windows）
+# 🔍 在Label Studio 标注工具中接入多模态大模型，用于图片数据的自动标注（Windows）
 
 本项目用于在 Windows 系统中，通过 Label Studio 接入多模态大模型（如 Doubao），对图片内容进行智能标注。适用于需要批量处理图像数据的标注任务，支持配置模板与本地 HTTP 服务。
 
